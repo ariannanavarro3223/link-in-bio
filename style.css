@@ -1,0 +1,147 @@
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #0a2340;
+  background: #000;
+}
+
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  background-image: url("../images/115EFE8A-1502-47C8-AAE3-9AAA42F47D5D_1_201_a.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+  padding: 16px;
+}
+
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35); 
+  backdrop-filter: blur(2px);
+  z-index: 0;
+}
+
+
+.header,
+.content,
+.footer {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 420px;
+}
+
+
+.header {
+  text-align: center;
+  margin-bottom: 32px; 
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin: 18px 0 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff; 
+}
+
+
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 28px; 
+}
+
+.social {
+  font-size: 0.75rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(3px);
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  margin-bottom: 24px;
+}
+
+.section h2 {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section h2 .thin {
+  font-weight: 300;
+}
+
+.section h2 .bold {
+  font-weight: 800;
+}
+
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 16px;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  backdrop-filter: blur(5px);
+  transition: transform 0.08s ease, box-shadow 0.08s ease, background 0.08s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  background: rgba(255,255,255,0.25);
+}
+
+
+.icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: #0a2340;
+}
+
+
+.footer {
+  text-align: center;
+  font-size: 0.75rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 16px;
+}
